@@ -57,11 +57,11 @@
                               <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-start">
                                   <div>
-                                    <h4 class="card-title card-title-dash">Project Members</h4>
-                                   <p class="card-subtitle card-subtitle-dash">Name of users that used the system</p>
+                                    <h4 class="card-title card-title-dash">Project Lists</h4>
+                                   <p class="card-subtitle card-subtitle-dash">List project that have been created</p>
                                   </div>
                                   <div>
-                                  <a href="{{url('/create')}}"> <button class="btn btn-primary btn-lg text-white mb-0 me-0" type="button" ><i class="mdi mdi-account-plus"></i>Add new member</button>
+                                  <a href="{{url('/create')}}"> <button class="btn btn-primary btn-lg text-white mb-0 me-0" type="button" ><i class="mdi mdi-account-plus"></i>Add new project</button>
 </a>
                                   </div>
                                </div>

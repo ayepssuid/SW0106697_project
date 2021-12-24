@@ -108,9 +108,17 @@
                                        
                                              <p>System Admin</p> 
                                        
-                                             @else
+                                             @elseif($data->usertype=="2")
                                        
-                                             <p>Normal User</p> 
+                                             <p>Project Manager </p> 
+
+                                             @elseif($data->usertype=="3")
+
+                                             <p>Project Leader</p>
+
+                                             @else
+
+                                             <p>Project Member</p>
                                         
                                              @endif
 
@@ -129,15 +137,17 @@
                                           
                                         </td>
 
-                                        @if($data->usertype=="0")
+                                        @if($data->usertype=="1")
+                                        <td>
+                                          <h6>Not Allowed</h6> 
+                                        </td>
+                                        
+                                        @else
                                         <td><a href="{{url('/deleteuser',$data->id)}}">
                                           <h6>Delete</h6> 
                                         </a>
                                         </td>
-                                        @else
-                                        <td>
-                                          <h6>Not Allowed</h6> 
-                                        </td>
+                                        
                                         @endif
 
                                         
